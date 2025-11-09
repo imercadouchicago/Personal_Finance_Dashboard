@@ -1,4 +1,4 @@
-// frontend/app/api/auth/signup/route.ts
+// project/app/api/auth/signup/route.ts
 // This file handles user signup functionality, including password hashing and JWT token generation.
 // It connects to the database, checks if the email already exists, hashes the password, and inserts a new user into the database.
 // It returns user data (excluding the password) upon successful signup or an error message if signup fails.
@@ -60,8 +60,8 @@ export async function POST(request: Request) {
     cookies().set({
       name: 'auth_token',
       value: token,
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
+      // httpOnly: true,
+      // secure: process.env.NODE_ENV === 'production',
       sameSite: 'strict',
       maxAge: 60 * 60 * 24 * 7, // 7 days
       path: '/',

@@ -48,8 +48,8 @@ finance-tracker/
 │ ├── lib/
 │ │ ├── db.ts # Database connection utilities
 │ │ └── env.ts # Environment validation
-│ ├── Dockerfile # Production Dockerfile for frontend
-│ ├── Dockerfile.dev # Development Dockerfile for frontend
+│ ├── Dockerfile # Production Dockerfile for project
+│ ├── Dockerfile.dev # Development Dockerfile for project
 │ ├── env.d.ts
 │ ├── eslint.config.mjs
 │ ├── middleware.ts

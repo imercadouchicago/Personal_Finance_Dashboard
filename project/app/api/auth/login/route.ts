@@ -1,4 +1,4 @@
-// frontend/app/api/auth/login/route.ts
+// project/app/api/auth/login/route.ts
 // This file handles user login functionality, including password verification and JWT token generation.
 // It connects to the database, checks if the user exists, verifies the password, and sets an authentication cookie.
 // It returns user data (excluding the password) upon successful login or an error message if login fails.
@@ -72,8 +72,8 @@ export async function POST(request: Request) {
     cookies().set({
       name: 'auth_token',
       value: token,
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production', // Only sends over HTTPS in production
+      // httpOnly: true,
+      // secure: process.env.NODE_ENV === 'production', // Only sends over HTTPS in production
       sameSite: 'strict',      // Restricts cookie to same-site (not cross-site) requests only
       maxAge: 60 * 60 * 24 * 7, // Cookie expiration time in seconds (7 days)
       path: '/',               // Cookie is available across your entire site

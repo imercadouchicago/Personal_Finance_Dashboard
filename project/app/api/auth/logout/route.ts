@@ -1,4 +1,4 @@
-// frontend/app/api/auth/login/route.ts
+// project/app/api/auth/login/route.ts
 // This file handles user login functionality, including password verification and JWT token generation.
 // It connects to the database, checks if the user exists, verifies the password, and sets an authentication cookie.
 // It returns user data (excluding the password) upon successful login or an error message if login fails.

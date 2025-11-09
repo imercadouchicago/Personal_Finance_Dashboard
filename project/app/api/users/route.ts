@@ -1,4 +1,4 @@
-// frontend/app/api/users/route.ts
+// project/app/api/users/route.ts
 // This file replaces the FastAPI backend functionality for user management
 // It handles user creation, retrieval, and authentication verification
 

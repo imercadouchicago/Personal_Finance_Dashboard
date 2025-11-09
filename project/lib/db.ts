@@ -1,10 +1,9 @@
-// frontend/lib/db.ts
-// Enhanced database configuration with connection pooling and better error handling
+// project/lib/db.ts
+// Note: need to incorporate usage of validatedatabaseconfig, initializeDatabase, and closeDatabaseConnections in your application startup and shutdown logic.
 import mysql from 'mysql2/promise';
 
 let connectionPool: mysql.Pool | null = null;
 
-// Change the return type to PoolConnection instead of Connection
 export async function connectToDatabase(): Promise<mysql.PoolConnection> {
   // Create connection pool if it doesn't exist
   if (!connectionPool) {

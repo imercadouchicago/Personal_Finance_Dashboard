@@ -1,4 +1,4 @@
-// file: frontend/lib/env.ts
+// file: project/lib/env.ts
 export function validateEnv() {
   const requiredEnvVars = ['JWT_SECRET', 'DATABASE_URL']; // Add all required vars
   

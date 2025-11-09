@@ -1,4 +1,4 @@
-// frontend/app/api/auth/session/route.ts
+// project/app/api/auth/session/route.ts
 // This file handles user session management, including retrieving user data from the database based on a JWT token.
 // It connects to the database, verifies the JWT token, and returns user information if the token is valid.
 // If the token is invalid or expired, it returns null for the user.
